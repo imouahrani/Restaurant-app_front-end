@@ -8,11 +8,14 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RestaurantsComponent
+    RestaurantsComponent,
+    RestaurantDetailComponent,
+    
   ],
   imports: [
     BrowserModule,

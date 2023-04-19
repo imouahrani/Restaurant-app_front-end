@@ -1,4 +1,4 @@
-<mat-card *ngFor = "let restaurant of restaurants" class="restaurant-card">
+<mat-card *ngFor = "let restaurant of restaurants" class="restaurant-card" [routerLink]="['/restaurants', restaurant.id]">
     <div>{{restaurant.id}}</div>
     <div style="font-weight: bold;">{{restaurant.nom}}</div>
     <div>{{restaurant.adresse}}</div>
