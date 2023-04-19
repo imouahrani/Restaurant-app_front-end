@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://park-nantes-app.herokuapp.com/api'
+  apiUrl: 'http://restos-nantes-app.herokuapp.com/api'
 };
