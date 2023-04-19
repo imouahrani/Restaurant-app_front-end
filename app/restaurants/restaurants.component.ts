@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RestaurantService } from '../restaurant.service';
 import { RestaurantInfo } from '../restaurantinfo';
 
 @Component({
@@ -8,15 +9,13 @@ import { RestaurantInfo } from '../restaurantinfo';
 })
 export class RestaurantsComponent implements OnInit{
   restaurants : RestaurantInfo[] | undefined;
+  constructor(private restaurantService : RestaurantService){}
 
   ngOnInit(): void {
-    let restaurants1 : RestaurantInfo = {
-      id : '1',
-      nom : 'Le resto chic',
-      adresse : '3 rue des liondards, 6300 clermont-ferrand'
-    }
-    this.restaurants = [];
-    this.restaurants.push(restaurants1) ;
+     this.restaurantService.getRestaurants().subscribe(
+      reponse => {
+          this.restaurants = reponse;
+      }
+    )
   }
-
 }
