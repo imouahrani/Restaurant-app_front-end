@@ -1,5 +1,5 @@
-<div *ngFor = "let restaurant of restaurants">
+<mat-card *ngFor = "let restaurant of restaurants" class="restaurant-card">
     <div>{{restaurant.id}}</div>
-    <div>{{restaurant.nom}}</div>
+    <div style="font-weight: bold;">{{restaurant.nom}}</div>
     <div>{{restaurant.adresse}}</div>
-</div>
+</mat-card>
