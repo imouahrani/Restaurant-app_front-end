@@ -1,3 +1,3 @@
 # Restaurant-app
-## GET mode synchrône et asynchrône
-![modeSynchrone_asynchrone.PNG](modeSynchrone_asynchrone.PNG)
+## Ajouter du style avec angularMaterial
+![angularMaterial.PNG](angularMaterial.PNG)
